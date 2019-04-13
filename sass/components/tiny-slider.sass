@@ -1,0 +1,30 @@
+.tns-outer
+    position: relative
+.tns-controls
+    button
+        display: flex
+        justify-content: center 
+        align-items: center
+        position: absolute
+        top: 50%
+        margin-top: -30px
+        z-index: 20
+        background-color: white
+        height: 50px
+        width: 50px
+        font-size: 1.2em
+        border-radius: 50%
+        border: 1px solid $light-border
+    button:first-child
+        left: -25px
+    button:last-child
+        right: -25px
+.tns-nav
+    display: none
+
+@include media-breakpoint-down(xs)
+    .tns-controls
+        button:first-child
+            left: -10px
+        button:last-child
+            right: -10px

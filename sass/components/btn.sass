@@ -1,0 +1,39 @@
+.btn
+    border-radius: 0px
+    font-size: 13px
+    font-weight: 600
+    padding: 1.03em 1.8em
+    letter-spacing: .5px
+.btn
+    &:active,
+    &:focus
+        box-shadow: none!important
+        outline: 0
+
+.btn.btn-wide
+    min-width: 120px
+
+
+
+
+/*----------------*/
+/*-----  Colors  -------*/
+/*------------------*/
+$facebook-color: #3b5998
+
+.btn-black
+    background-color: black
+    color: white
+
+
+
+
+.btn-facebook
+    background-color: $facebook-color
+    color: white
+    &:hover
+        background-color: darken($facebook-color, 10%)
+
+.btn-google
+    background-color: white
+    border-color: $light-border

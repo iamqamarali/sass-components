@@ -1,0 +1,45 @@
+$uploading-img-dimentions: 140px !default
+
+
+.uploading-img
+    display: inline-block
+    position: relative
+    width: $uploading-img-dimentions
+    height: $uploading-img-dimentions    
+    border: 1px solid $light-border
+    margin-right: 15px
+    margin-bottom: 15px
+    vertical-align: top
+.uploading-img-content         
+    height: 100%
+    width: 100%
+    position: relative
+    overflow: hidden
+    &:hover
+        .uploading-img-text
+            left: 0
+            right: 0
+.uploading-img-img
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    z-index: 1
+.uploading-img-text
+    position: absolute
+    bottom: 5px
+    left: -100%
+    right: 100%
+    z-index: 2
+    padding: 10px
+    font-size: .9em
+    color: white
+    background-color: rgba(0,0,0,.9)
+    transition: all .3s ease
+.uploading-img-delete-icon
+    position: absolute
+

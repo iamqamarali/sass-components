@@ -1,0 +1,34 @@
+
+.autocomplete-search
+.autocomplete-input-group
+
+.autocomplete-input-wrapper
+    position: relative
+    z-index: 100
+    flex: 1
+
+.autocomplete-input
+.autocomplete-suggestions
+    position: absolute
+    z-index: 100
+    top: 100%
+    left: 0
+    right: 0
+    border: 1px solid $light-border
+    border-top: 0
+.autocomplete-suggestion
+    text-align: left
+    background-color: white
+    padding: 15px 10px
+    font-size: .9em
+    font-weight: 500
+    cursor: pointer
+    user-select: none
+    &:hover
+        background-color: $light
+.autocomplete-suggestion.selected
+    background-color: $primary
+    color: white
+
+
+.autocomplete-btn

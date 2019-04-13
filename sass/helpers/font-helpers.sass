@@ -1,0 +1,7 @@
+@for $weight from 2 through 9
+    .font-weight-#{$weight * 100 }
+        font-weight: #{$weight * 100}!important
+
+@for $size from 1 through 20
+    .fs-#{$size}x
+        font-size: #{ ($size * 2) + 6}px!important

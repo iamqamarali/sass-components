@@ -1,0 +1,44 @@
+.sidebar ~.app-content
+    padding-left: $sidebar-width
+    
+    
+.sidebar
+    width: $sidebar-width
+    background-color: $sidebar-background-color
+    position: fixed
+    z-index: 100
+    left: 0
+    top: 0
+    bottom: 0
+    overflow: auto
+.sidebar-container
+
+.sidebar-brand  
+    padding: 15px
+.sidebar-menu
+    display: block
+    padding: 0
+    font-size: .93em
+    list-style-type: none
+.sidebar-menu-item
+    display: block
+    margin: 0
+
+a.sidebar-menu-link,
+.sidebar-menu-link
+    text-decoration: none
+    display: block
+    padding: 15px 20px
+    color: white
+    opacity: .9
+    transition: .2s all
+.sidebar-menu-item
+    &.active,
+    &:hover
+        .sidebar-menu-link
+            background-color: lighten($sidebar-background-color, 7%)
+    .icon
+        margin-right: 5px
+
+.sidebar-menu-dropdown
+

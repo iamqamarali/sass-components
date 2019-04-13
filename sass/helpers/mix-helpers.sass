@@ -1,0 +1,62 @@
+/*-----toggler------*/
+.toggler
+    min-width: 25px
+    min-height: 20px
+    padding: 0
+    border: 0
+    border-radius: 0
+    background-color: transparent
+    cursor: pointer
+    &:active,
+    &:focus
+        outline: 0
+    &:hover
+        .icon-bar
+            &:nth-child(3)
+                width: 100%
+    .icon-bar
+        top: 0
+        position: relative
+        display: block
+        margin: 5px 0
+        border-bottom: 2px solid black
+        &:nth-child(3)
+            width: 50%
+/*-----toggler end------*/
+
+    
+/*-----Vertical Nav------*/
+.vertical-nav
+    list-style-type: none
+    margin: 0
+    padding: 0
+    li
+        padding: 0
+        margin: 0
+    li,a
+        display: block
+
+/*-----Vertical Nav End------*/
+
+
+/*-------Delete icon--------*/
+.delete-icon
+    height: 22px
+    width: 22px
+    line-height: 22px
+    font-size: 8px
+    font-weight: 600
+    text-align: center
+    cursor: pointer
+    box-shadow: 0 0 5px rgba(0,0,0,.3)
+    border-radius: 50%
+    background-color: $danger
+    color: white
+    z-index: 10
+
+.delete-icon.top-right
+    position: absolute
+    top: -11px
+    right: -11px
+
+/*-------End Delete icon--------*/
